@@ -1,12 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
-  },
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Export a static site that can be hosted from Zoom.ph cPanel.
+  output: "export",
+  trailingSlash: true,
   turbopack: {
     rules: {
       "*.css": {
